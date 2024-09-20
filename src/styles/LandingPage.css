@@ -1,0 +1,363 @@
+
+
+#home_button {
+  position: absolute;
+  top: 190px;
+  left: 390px;
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+  #home_button {
+    top: 180px;
+    left: 90px;
+  }
+  .landing {
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+  #home_button {
+    top: 180px;
+    left: 120px;
+  }
+  .landing {
+    height: 650px;
+    width: 360px!important;
+    background-size: cover!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    margin: 0px !important;
+    position: absolute!important;
+    left: 0px;
+    right:0px;
+    
+  }
+  #home_section {
+    width: 100%!important;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+  #home_button {
+    top: 230px;
+    left: 150px;
+  }
+  .landing {
+    
+    width: 400px!important;
+    /* margin-top: 50px!important; */
+    background-size: cover!important;
+    background-position: center center!important;
+    /* background-repeat: no-repeat!important;
+    margin: 0px !important; */
+    position: absolute!important;
+    left: 0px;
+    right:0px;
+    height:590px;
+    margin-top: 80px;
+   /* object-fit: fill; */
+    
+  }
+
+  #home_section {
+    width: 100%!important;
+    margin: 0px!important;
+    position: absolute!important;
+    left: 0px!important;
+    right:0px;
+
+
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+  #home_button {
+    top: 180px;
+    left: 160px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+  #home_button {
+    top: 180px;
+    left: 195px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 550px) {
+  #home_button {
+    top: 180px;
+    left: 215px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  #home_button {
+    top: 180px;
+    left: 250px;
+    position: fixed;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+  #home_button {
+    top: 180px;
+    left: 270px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 700px) {
+  #home_button {
+    top: 180px;
+    left: 290px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 750px) {
+  #home_button {
+    top: 180px;
+    left: 340px;
+  }
+  .landing {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 900px) {
+  #home_button {
+    top: 170px;
+    left: 160px;
+  }
+  .landing {
+    height: 100vh;
+    width: 150%;
+    transform: translateX(-25%);
+  }
+  .manufacturing_unit {
+    width: 75%;
+    height: 100vh;
+    transform: translateX(20%);
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  #home_button {
+    top: 170px;
+    left: 220px;
+  }
+  .landing {
+    height: 100vh;
+    width: 150%;
+    transform: translateX(-20%);
+  }
+  .manufacturing_unit {
+    width: 75%;
+    height: 100vh;
+    transform: translateX(15%);
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  #home_button {
+    top: 170px;
+    left: 270px;
+  }
+  .landing {
+    height: 100vh;
+    width: 150%;
+    transform: translateX(-20%);
+  }
+  .manufacturing_unit {
+    width: 75%;
+    height: 100vh;
+    transform: translateX(15%);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  #home_button {
+    top: 170px;
+    left: 320px;
+  }
+  .landing {
+    height: 100vh;
+    width: 100%;
+    transform: translateX(5%);
+  }
+  .manufacturing_unit {
+    width: 75%;
+    height: 100vh;
+    transform: translateX(15%);
+  }
+}
+
+
+
+
+
+
+/* #landing_page {
+  width: 100%;
+  height: 100vh;
+}
+#home_section {
+  background-image: url("../assets/images/landing1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28vh;
+}
+
+.landing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.landing {
+  width: 50%;
+  height: 100vh;
+}
+
+.manufacturing_unit {
+  height: 100vh;
+}
+
+.home_button {
+  display: flex; 
+  align-items: center; 
+
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  left: 320px;
+  top: 210px;
+}
+
+.home_button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.home_button_text {
+  margin-right: 8px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.home_button_icon {
+  font-size: 1.5em;
+  margin-left: 8px;
+}
+
+@media (min-width: 200px) and (max-width: 390px) {
+  #home_section {
+    background-size: contain !important;
+  }
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .manufacturing_unit {
+    display: none;
+  }
+
+  .landing {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .home_button {
+    z-index: 1;
+  }
+  .home_button_text {
+    margin-right: 8px;
+    margin-bottom: 5px;
+    font-size: 10px !important;
+
+    color: black;
+  }
+
+  .home_button_icon {
+    font-size: 15px !important;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #home_section {
+    background-size: contain !important;
+  }
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .landing,
+  .manufacturing_unit {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .home_button {
+    position: absolute;
+    left: 130px;
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  #home_section {
+    background-size: cover;
+  }
+  .landing-container {
+    flex-direction: row;
+  }
+
+  .landing,
+  .manufacturing_unit {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .home_button {
+    position: absolute;
+    left: 170px;
+    top: 150px;
+  }
+}
+ */

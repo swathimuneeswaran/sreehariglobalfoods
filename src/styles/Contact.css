@@ -1,0 +1,71 @@
+.carousel-item {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Ensure the carousel item takes the full height of the image */
+}
+
+.carousel-caption {
+  position: absolute; /* Ensures the caption stays over the image */
+ 
+  left: 50%; /* Centers the caption horizontally */
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark background for better text visibility */
+  padding: 10px 20px;
+  border-radius: 10px; /* Optional: round the box corners */
+  max-width: 80%; /* Optional: limit the width for better layout on smaller screens */
+}
+
+.carousel-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Media queries for responsive design */
+
+/* Tablets and smaller screens */
+@media (max-width: 900px) {
+  .carousel-text {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  .carousel-caption {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 500px !important;
+    object-fit: cover;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 700px) {
+  .carousel-text {
+    font-size: 1.2rem; /* Further reduce font size for mobile screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Further reduce font size for mobile screens */
+  }
+
+  .carousel-caption {
+    padding: 5px 10px; /* Further adjust padding for mobile screens */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 500px !important;
+    object-fit: cover;
+  }
+}

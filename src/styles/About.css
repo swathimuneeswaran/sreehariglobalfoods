@@ -1,0 +1,506 @@
+
+.carousel-caption1 {
+  position: absolute;
+  left: 5%; /* Positioning to the left side */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left; /* Aligning text to the left */
+  z-index: 10;
+}
+
+.carousel-text1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color:rgba(197, 224, 180, 255);
+}
+
+.carousel-text1 span{
+  color: green; /* Darker color for the text */
+ 
+}
+
+.carousel-caption1 p {
+  font-size: 1.2rem;
+  width:40%;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption1 .carousel-text1{
+    font-size: 25px;
+  }
+  .img_carousel img{
+  
+    height: 650px!important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .carousel-caption1 {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    color: #fff;
+    text-align: center; /* Align text to the center */
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); /* Blur background effect */
+    padding: 10px;
+    border-radius: 10px; /* Smooth corners */
+    backdrop-filter: blur(10px); /* Background blur effect */
+    margin-top: 30px;
+    width:70%;
+  }
+
+  .carousel-caption1 .carousel-text1 {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .carousel-caption1 p {
+    font-size: 1rem; /* Reduce paragraph font size */
+    width: 100%; /* Full width */
+  }
+
+  .img_carousel img {
+    height: 500px !important; /* Adjust image height for smaller screens */
+  }
+}
+
+.section_about {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.section_about h1 {
+  font-size: 3.5rem;
+  text-align: center; /* Center align the heading */
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section_about h1 span {
+  color: green; /* Highlight the word "Us" in green */
+}
+
+.entire_about {
+  display: flex;
+  justify-content: space-around; /* Space out the text and image */
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 0 50px;
+}
+
+.main_goal {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_goal h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main_goal p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about_img img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Media Queries for screens up to 768px */
+@media (max-width: 768px) {
+  .section_about h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .main_goal {
+    width: 100%; /* Full width for the text */
+    margin-bottom: 20px; /* Add space between text and image */
+  }
+
+  .about_img img {
+    max-width: 100%; /* Full width image */
+  }
+
+  .entire_about {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+    flex-direction: column; /* Stack text and image vertically */
+  }
+
+  .main_goal h2 {
+    font-size: 1.8rem; /* Reduce sub-heading size */
+  }
+
+  .main_goal p {
+    font-size: 1rem; /* Slightly smaller paragraph text */
+  }
+}
+
+/* Media Queries for screens between 800px and 1200px */
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .entire_about {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:50px;
+  }
+  .about_text {
+    width: 50%; /* Set the width of the text to 50% */
+    font-size: 15px; /* Reduce the font size */
+  }
+  .about_img{
+    width: 50%; /* Set the width of the image to 50% */
+   
+  }
+  .main_goal p{
+    font-size: 0.9rem; /* Reduce font size for paragraphs */
+    line-height: 1.5; /* Adjust line height */
+  }
+  .main_goal h2{
+    font-size: 1.6rem; /* Increase sub-heading size */
+    
+  }
+}
+
+
+
+/* Media Queries for screens up to 500px */
+@media (max-width: 500px) {
+  .section_about h1 {
+    font-size: 2rem; /* Further reduce heading size */
+  }
+
+  .main_goal {
+    width: 90%; /* Full width for the text */
+   
+  }
+
+  .main_goal h2 {
+    font-size: 1.5rem; /* Reduce sub-heading size */
+  }
+
+  .main_goal p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  .about_img img {
+    max-width: 100%; /* Full width image */
+    margin-top: 20px; /* Add spacing between image and text */
+  }
+
+  .entire_about {
+    padding: 0 10px; /* Less padding for very small screens */
+  }
+}
+
+
+/* Container for the flowchart section */
+.flowchart-container {
+  display: flex;
+  gap:200px;
+  padding-left: 300px;
+  background-color: white; /* Light background color for contrast */
+}
+
+/* Flowchart container */
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 300px; /* Adjust width to fit the content */
+}
+
+/* Heading centered */
+
+
+.flow_head h1, .various_items h1{
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 50px;
+  font-weight: bold;
+}
+
+/* Each step in the flowchart (boxed design) */
+.flow-step.box {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px; /* Makes the box corners rounded */
+  width: 280px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(white, #f4f4f4); /* Light gradient background for depth */
+}
+
+/* Container for step image */
+.step-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Round process images */
+.process-image-round {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover;
+  border: 2px solid #ddd; /* Optional border for the image */
+}
+
+/* Container for step text */
+.step-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Step number styling */
+.step-number {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Step content styling */
+.step-content {
+  font-size: 1rem;
+}
+
+/* Arrows between steps */
+.flow-arrow {
+  font-size: 2rem;
+  color: #888;
+}
+
+/* Container for images next to flowchart */
+.flowchart-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ padding-bottom: 20px;
+  align-items: center;
+}
+
+/* Flowchart images styling */
+.flowchart-images img {
+  width: 500px; /* Adjust size as needed */
+  height: 300px;
+  
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for images */
+}
+
+/* Optional: Adding transitions for hover effects */
+.flow-step:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+  .flowchart {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .flow-step.box {
+    width: 100%;
+  }
+}
+
+/* Media query for tablet screens (between 600px and 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .flowchart-container {
+    flex-direction: row;
+    padding-left: 50px;
+    gap: 100px; /* Adjust gap for smaller screens */
+  }
+
+  .flowchart-images img {
+    width: 300px;
+    height: 290px; /* Adjust image size */
+    margin-right: 50px;
+  }
+
+  .flowchart {
+    width: 100%;
+  }
+
+  .flow-step.box {
+    width: 90%;
+  }
+
+  .process-image-round {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Media query for mobile screens (max-width 600px) */
+@media (max-width: 600px) {
+  .flowchart-container {
+    padding-left: 0;
+    gap: 10px; /* Reduce gap for mobile */
+  
+  }
+
+  .flowchart-images img {
+   display: none;
+  }
+
+  .flow-step.box {
+    width: 80%; /* Increase the width of the box */
+    padding: 10px;
+  }
+
+  .process-image-round {
+    width: 50px; /* Smaller process image */
+    height: 50px;
+  }
+
+  .flow-arrow {
+    font-size: 1.5rem;
+  }
+  .flow_head h1{
+    font-size: 2rem!important;
+  }
+}
+
+
+
+
+/* dehydrated list =================================================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px; /* Limits the container width */
+  margin: auto;
+ 
+  padding-bottom: 90px;
+}
+
+/* Common box styles */
+.contain_box1, .contain_box2, .contain_box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+  padding: 20px;
+  /* width:100%; */
+  background: #f9f9f9; /* Adds a light background to the sections */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds some shadow */
+  border-radius: 10px; /* Rounds the corners */
+  transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.contain_box1:hover, .contain_box2:hover, .contain_box3:hover {
+  transform: scale(1.02); /* Grows slightly when hovered */
+}
+
+/* Image fade container */
+.image-fade {
+  position: relative;
+  width: 320px;
+  height: 350px;
+  border: 3px solid #ddd; /* Adds a border around the images */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures images stay within the border */
+}
+
+.fade-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-img.active {
+  opacity: 1;
+}
+
+/* Paragraph styles */
+.contain_box1 p, .contain_box2 p, .contain_box3 p {
+  width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  font-family: 'Roboto', sans-serif; /* Adds a clean font */
+  text-align: justify;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+h1 span {
+  color: #28a745; /* Updates green color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contain_box1, .contain_box2, .contain_box3 {
+    flex-direction: column; /* Stack boxes vertically on small screens */
+    gap: 20px;
+  }
+
+  .contain_box1 p, .contain_box2 p, .contain_box3 p {
+    width: 100%;
+  }
+
+  .image-fade {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+ .various_items h1 {
+    font-size: 2rem!important;
+  }
+
+  .image-fade {
+    width: 240px;
+    height: 260px;
+  }
+
+  .contain_box1 p, .contain_box2 p, .contain_box3 p {
+    font-size: 1rem;
+  }
+}
